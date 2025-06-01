@@ -15,7 +15,7 @@ function Register() {
     setError(null);
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5001/register', form);
+      const res = await axios.post('http://localhost:5000/register', form);
       alert(res.data.message);
       setForm({ username: '', email: '', password: '' }); 
     } catch (err) {

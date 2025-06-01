@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Home";
 import Loginpage from "./Loginpage";
-import Register from "./register";
+import Register from "./Register";
 
 function App() {
   const [uploadPath, setUploadPath] = useState([]);
