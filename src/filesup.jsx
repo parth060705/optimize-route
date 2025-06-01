@@ -17,7 +17,7 @@ const FileUpload = ({ onPathUpdate }) => {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://localhost:5000/upload", {
+      const res = await fetch("https://optimize-route-backend.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
