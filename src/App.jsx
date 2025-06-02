@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Home";
-import Loginpage from "./Loginpage";
-import Register from "./Register";
+// import Loginpage from "./Loginpage";
+// import Register from "./Register";
 
 function App() {
   const [uploadPath, setUploadPath] = useState([]);
@@ -38,8 +38,8 @@ function App() {
             }
           />
         </Route>
-        <Route path="/login" element={<Loginpage />} />
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/login" element={<Loginpage />} /> */}
+        {/* <Route path="/register" element={<Register />} /> */}
       </Routes>
     </BrowserRouter>
   );

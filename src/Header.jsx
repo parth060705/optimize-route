@@ -9,8 +9,8 @@ const Header = () => {
       <ul>
         <li className="flex gap-3">
           <Link className="text-white font-medium hover:opacity-80 hover:font-bold" to="/home">Home</Link>
-          <Link className="text-white font-medium hover:opacity-80 hover:font-bold" to="/login">login</Link>
-          <Link className="text-white font-medium hover:opacity-80 hover:font-bold" to="/register">Register</Link>
+          {/* <Link className="text-white font-medium hover:opacity-80 hover:font-bold" to="/login">login</Link>
+          <Link className="text-white font-medium hover:opacity-80 hover:font-bold" to="/register">Register</Link> */}
         </li>
       </ul>
 
