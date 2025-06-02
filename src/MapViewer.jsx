@@ -10,8 +10,13 @@ function MapViewer({ path }) {
   const center = path[0];
 
   return (
-    <div className="w-[1200px] max-w-4xl h-[400px] mx-auto mt-6">
-      <MapContainer center={center} zoom={13} scrollWheelZoom={true} style={{ height: "100%", width: "100%" }}>
+    <div className="w-full max-w-6xl h-[60vh] sm:h-[400px] mx-auto mt-6 px-4">
+      <MapContainer
+        center={center}
+        zoom={13}
+        scrollWheelZoom={true}
+        style={{ height: "100%", width: "100%" }}
+      >
         <TileLayer
           attribution="&copy; OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -24,7 +29,7 @@ function MapViewer({ path }) {
             icon={L.divIcon({
               className: "leaflet-div-icon custom-icon",
               html: `
-                <div style="background: #ffff; color: black; border: 3px solid black; border-radius: 5px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+                <div style="background: #fff; color: black; border: 3px solid black; border-radius: 5px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 15px;">
                   ${i + 1}
                 </div>`,
             })}
