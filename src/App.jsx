@@ -8,7 +8,7 @@ import Home from "./Home";
 function App() {
   const [uploadPath, setUploadPath] = useState([]);
   const [geocodePath, setGeocodePath] = useState([]);
-  const [info, setInfo] = useState({ distance_km: null, type: "" });
+const [info, setInfo] = useState({ distance_km: null, type: "" });
 
   const handleUploadComplete = (path, distance, type) => {
     setUploadPath(path);
